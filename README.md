@@ -8,8 +8,6 @@
 ![Blockchain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchain&logoColor=white)
 ![Web3](https://img.shields.io/badge/Web3-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
 
-![Token](https://img.shields.io
-
 ## 🚀 Fitur Utama
 
 - **Token Rewards**: Sistem pemberian token sebagai reward kepada pengguna
