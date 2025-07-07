@@ -1,0 +1,10 @@
+service : {
+  addFaucetFunds: (nat) -> (text);
+  balanceOf: (principal) -> (nat) query;
+  getFaucetBalance: () -> (nat) query;
+  getRemainingTokens: () -> (nat) query;
+  getSymbol: () -> (text) query;
+  getTotalUsers: () -> (nat) query;
+  payOut: () -> (text);
+  transfer: (principal, nat) -> (text);
+}

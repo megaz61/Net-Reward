@@ -1,5 +1,5 @@
 html {
-  background: #e0dfdf; /* pastel retro purple */
+  background: #A49FC1; /* pastel retro purple */
   font-family: System, monospace;
   font-size: 10pt;
 }
@@ -28,13 +28,13 @@ fieldset {
 .window {
   position: relative;
   cursor: default;
-  margin: 1em auto;
+  margin: 2em auto;
   width: 80%;
   background: #375E97; /* primary retro blue */
   color: #ECF0F1; /* pixel white */
   border: 6px double #ECF0F1;
   padding: 1em;
-  box-shadow: 0 0 0 3px #375E97, 1em 0.6em 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 3px #375E97, 1em 1em 3px 0 rgba(0, 0, 0, 0.5);
   max-width: 640px;
 }
 
