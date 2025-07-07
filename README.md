@@ -1,85 +1,45 @@
-# Check your Balance
+# Exploring Web3: Build Token App with Motoko on Local Blockchain Network
 
-1. Find out your principal id:
+Proyek decentralized application (dApp) yang mengeksplorasi teknologi blockchain modern menggunakan bahasa pemrograman Motoko dan React JS. Aplikasi ini berjalan di jaringan blockchain lokal dan menyediakan pengalaman interaktif dalam ekosistem Web3.
 
-```
-dfx identity get-principal
-```
+## 🚀 Fitur Utama
 
-2. Save it somewhere.
+- **Token Rewards**: Sistem pemberian token sebagai reward kepada pengguna
+- **Wallet Balance**: Pengecekan saldo wallet secara real-time
+- **Token Transfer**: Transfer token antar pengguna dengan mudah
+- **Local Blockchain**: Implementasi pada jaringan blockchain lokal untuk pengembangan dan testing
 
-e.g. My principal id is: gbdev-tyqsv-hnvqv-7mgz4-4kcfl-wbv6x-6khez-y56gq-uohqs-quomc-uqe
+## 🛠️ Teknologi yang Digunakan
 
+![Motoko](https://img.shields.io/badge/Motoko-292D3E?style=for-the-badge&logo=motoko&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Blockchain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchain&logoColor=white)
+![Web3](https://img.shields.io/badge/Web3-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
 
-3. Format and store it in a command line variable:
-```
-OWNER_PUBLIC_KEY="principal \"$( \dfx identity get-principal )\""
-```
+- **Motoko**: Bahasa pemrograman untuk smart contract di Internet Computer
+- **React JS**: Framework frontend untuk antarmuka pengguna
+- **Blockchain Lokal**: Jaringan blockchain untuk pengembangan dan eksperimen
 
-4. Check that step 3 worked by printing it out:
-```
-echo $OWNER_PUBLIC_KEY
-```
+## 📝 Tentang Proyek
 
-5. Check the owner's balance:
-```
-dfx canister call token balanceOf "( $OWNER_PUBLIC_KEY )"
-```
+Aplikasi ini merupakan fondasi eksperimen mandiri dalam pengembangan decentralized apps (dApps). Meskipun saat ini berjalan di jaringan lokal, proyek ini memberikan pemahaman mendalam tentang:
 
-# Charge the Canister
+- Pengembangan smart contract dengan Motoko
+- Integrasi frontend dengan blockchain
+- Manajemen token dan wallet
+- Konsep dasar Web3 dan DeFi
 
+## 🎯 Tujuan Pembelajaran
 
-1. Check canister ID:
-```
-dfx canister id token
-```
+Proyek ini bertujuan untuk mengeksplorasi dan memahami:
+- Arsitektur aplikasi blockchain
+- Interaksi antara frontend dan smart contract
+- Konsep tokenomics dan reward system
+- Pengembangan dApps yang user-friendly
 
-2. Save canister ID into a command line variable:
-```
-CANISTER_PUBLIC_KEY="principal \"$( \dfx canister id token )\""
-```
+---
 
-3. Check canister ID has been successfully saved:
-```
-echo $CANISTER_PUBLIC_KEY
-```
-
-4. Transfer half a billion tokens to the canister Principal ID:
-```
-dfx canister call token transfer "($CANISTER_PUBLIC_KEY, 500_000_000)"
-```
-
-# Deploy the Project to the Live IC Network
-
-1. Create and deploy canisters:
-
-```
-dfx deploy --network ic
-```
-
-2. Check the live canister ID:
-```
-dfx canister --network ic id token
-```
-
-3. Save the live canister ID to a command line variable:
-```
-LIVE_CANISTER_KEY="principal \"$( \dfx canister --network ic id token )\""
-```
-
-4. Check that it worked:
-```
-echo $LIVE_CANISTER_KEY
-```
-
-5. Transfer some tokens to the live canister:
-```
-dfx canister --network ic call token transfer "($LIVE_CANISTER_KEY, 50_000_000)"
-```
-
-6. Get live canister front-end id:
-```
-dfx canister --network ic id token_assets
-```
-7. Copy the id from step 6 and add .raw.ic0.app to the end to form a URL.
-e.g. zdv65-7qaaa-aaaai-qibdq-cai.raw.ic0.app
+*Proyek ini adalah bagian dari eksplorasi teknologi blockchain dan Web3 development.*
